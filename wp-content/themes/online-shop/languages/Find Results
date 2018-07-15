@@ -1,0 +1,217 @@
+Searching 4267 files for "All Categories"
+
+C:\xampp\htdocs\wordpress\wp-admin\includes\export.php:
+   42   *     @type string $category       Category (slug) to export content for. Used only when `$content` is 'post'. If
+   43   *                                  set, only post content assigned to `$category` will be exported. Accepts false
+   44:  *                                  or a specific category slug. Default is false (all categories).
+   45   *     @type string $start_date     Start date to export content from. Expected date format is 'Y-m-d'. Used only
+   46   *                                  when `$content` is 'post', 'page' or 'attachment'. Default false (since the
+
+C:\xampp\htdocs\wordpress\wp-admin\includes\meta-boxes.php:
+  998  <div id="taxonomy-linkcategory" class="categorydiv">
+  999  	<ul id="category-tabs" class="category-tabs">
+ 1000: 		<li class="tabs"><a href="#categories-all"><?php _e( 'All Categories' ); ?></a></li>
+ 1001  		<li class="hide-if-no-js"><a href="#categories-pop"><?php _ex( 'Most Used', 'categories' ); ?></a></li>
+ 1002  	</ul>
+
+C:\xampp\htdocs\wordpress\wp-content\languages\plugins\woocommerce-vi.mo:
+    <binary>
+
+C:\xampp\htdocs\wordpress\wp-content\languages\plugins\woocommerce-vi.po:
+    <binary>
+
+C:\xampp\htdocs\wordpress\wp-content\languages\vi.mo:
+    <binary>
+
+C:\xampp\htdocs\wordpress\wp-content\languages\vi.po:
+ 12071  
+ 12072  #: wp-includes/taxonomy.php:509
+ 12073: msgid "All Categories"
+ 12074  msgstr "Tất cả chuyên mục"
+ 12075  
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\i18n\languages\woocommerce.pot:
+ 20516  
+ 20517  #: includes/class-wc-post-types.php:92
+ 20518: msgid "All categories"
+ 20519  msgstr ""
+ 20520  
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\woocommerce\includes\class-wc-post-types.php:
+   90  						'menu_name'         => _x( 'Categories', 'Admin menu name', 'woocommerce' ),
+   91  						'search_items'      => __( 'Search categories', 'woocommerce' ),
+   92: 						'all_items'         => __( 'All categories', 'woocommerce' ),
+   93  						'parent_item'       => __( 'Parent category', 'woocommerce' ),
+   94  						'parent_item_colon' => __( 'Parent category:', 'woocommerce' ),
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-wishlist\languages\yith-woocommerce-wishlist-da_DK.po:
+  954  #~ msgstr "Søg kategorier"
+  955  
+  956: #~ msgid "All Categories"
+  957  #~ msgstr "Alle kategorier"
+  958  
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-wishlist\languages\yith-woocommerce-wishlist-fa_IR.po:
+ 1066  #~ msgstr "جستجو در دسته بندی ها"
+ 1067  
+ 1068: #~ msgid "All Categories"
+ 1069  #~ msgstr "همه دسته بندی ها"
+ 1070  
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-wishlist\languages\yith-woocommerce-wishlist-it_IT.po:
+ 1719  #~ msgstr "Cerca categorie"
+ 1720  
+ 1721: #~ msgid "All Categories"
+ 1722  #~ msgstr "Tutte le categorie"
+ 1723  
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-wishlist\languages\yith-woocommerce-wishlist-sv_SE.po:
+ 1036  #~ msgstr "Sök kategorier"
+ 1037  
+ 1038: #~ msgid "All Categories"
+ 1039  #~ msgstr "Alla kategorier"
+ 1040  
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-wishlist\plugin-fw\languages\yith-plugin-fw-es_ES.mo:
+    <binary>
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-wishlist\plugin-fw\languages\yith-plugin-fw-es_ES.po:
+   87  
+   88  #: lib/yit-cpt-unlimited.php:628
+   89: msgid "All Categories"
+   90  msgstr "Todas las categorías"
+   91  
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-wishlist\plugin-fw\languages\yith-plugin-fw-it_IT.mo:
+    <binary>
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-wishlist\plugin-fw\languages\yith-plugin-fw-it_IT.po:
+   87  
+   88  #: lib/yit-cpt-unlimited.php:628
+   89: msgid "All Categories"
+   90  msgstr "Tutte le categorie"
+   91  
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-wishlist\plugin-fw\languages\yith-plugin-fw.pot:
+   88  
+   89  #: lib/yit-cpt-unlimited.php:628
+   90: msgid "All Categories"
+   91  msgstr ""
+   92  
+
+C:\xampp\htdocs\wordpress\wp-content\plugins\yith-woocommerce-wishlist\plugin-fw\lib\yit-cpt-unlimited.php:
+  626                      'singular_name'     => _x( 'Category', 'taxonomy singular name', 'yith-plugin-fw' ),
+  627                      'search_items'      => __( 'Search Categories', 'yith-plugin-fw' ),
+  628:                     'all_items'         => __( 'All Categories', 'yith-plugin-fw' ),
+  629                      'parent_item'       => __( 'Parent Category', 'yith-plugin-fw' ),
+  630                      'parent_item_colon' => __( 'Parent Category:', 'yith-plugin-fw' ),
+
+C:\xampp\htdocs\wordpress\wp-content\themes\online-shop\languages\online-shop.pot:
+ 2780  
+ 2781  #: template-parts/product-search.php:13
+ 2782: msgid "All Categories"
+ 2783  msgstr ""
+ 2784  
+
+C:\xampp\htdocs\wordpress\wp-content\themes\online-shop\template-parts\product-search.php:
+   11  			<?php $current = ( isset( $_GET['product_category'] ) ) ? absint( $_GET['product_category'] ) : '' ; ?>
+   12              <select class="select_products" name="product_category">
+   13:                 <option value=""><?php esc_html_e( 'All Categories', 'online-shop' ); ?></option>
+   14  				<?php foreach ( $terms as $cat ) : ?>
+   15                      <option value="<?php echo esc_attr( $cat->term_id ); ?>" <?php selected( $current, $cat->term_id ); ?> ><?php echo esc_attr( $cat->name ); ?></option>
+
+C:\xampp\htdocs\wordpress\wp-includes\category-template.php:
+  279   *     for information on additional accepted arguments.
+  280   *
+  281:  *     @type string       $show_option_all   Text to display for showing all categories. Default empty.
+  282   *     @type string       $show_option_none  Text to display for showing no categories. Default empty.
+  283   *     @type string       $option_none_value Value to use when no category is selected. Default empty.
+  ...
+  481   *     @type string       $separator             Separator between links. Default '<br />'.
+  482   *     @type bool|int     $show_count            Whether to show how many posts are in the category. Default 0.
+  483:  *     @type string       $show_option_all       Text to display for showing all categories. Default empty string.
+  484   *     @type string       $show_option_none      Text to display for the 'no categories' option.
+  485   *                                               Default 'No categories'.
+
+C:\xampp\htdocs\wordpress\wp-includes\category.php:
+   11   *
+   12   * If you change the type to 'link' in the arguments, then the link categories
+   13:  * will be returned instead. Also all categories will be updated to be backward
+   14   * compatible with pre-2.3 plugins and themes.
+   15   *
+
+C:\xampp\htdocs\wordpress\wp-includes\class-simplepie.php:
+ 2067  
+ 2068  	/**
+ 2069: 	 * Get all categories for the feed
+ 2070  	 *
+ 2071  	 * Uses `<atom:category>`, `<category>` or `<dc:subject>`
+
+C:\xampp\htdocs\wordpress\wp-includes\class-wp-xmlrpc-server.php:
+ 6028  
+ 6029  	/**
+ 6030: 	 * Retrieve list of all categories on blog.
+ 6031  	 *
+ 6032  	 * @since 1.5.0
+
+C:\xampp\htdocs\wordpress\wp-includes\deprecated.php:
+  932  	}
+  933  
+  934: 	if ( $category == -1 ) //get_bookmarks uses '' to signify all categories
+  935  		$category = '';
+  936  
+
+C:\xampp\htdocs\wordpress\wp-includes\link-template.php:
+  180  				 *
+  181  				 * @param WP_Term  $cat  The category to use in the permalink.
+  182: 				 * @param array    $cats Array of all categories (WP_Term objects) associated with the post.
+  183  				 * @param WP_Post  $post The post in question.
+  184  				 */
+
+C:\xampp\htdocs\wordpress\wp-includes\SimplePie\Enclosure.php:
+  346  
+  347  	/**
+  348: 	 * Get all categories
+  349  	 *
+  350  	 * @return array|null Array of {@see SimplePie_Category} objects
+
+C:\xampp\htdocs\wordpress\wp-includes\SimplePie\Item.php:
+  429  
+  430  	/**
+  431: 	 * Get all categories for the item
+  432  	 *
+  433  	 * Uses `<atom:category>`, `<category>` or `<dc:subject>`
+
+C:\xampp\htdocs\wordpress\wp-includes\taxonomy.php:
+  467   *     @type string $popular_items              This label is only used for non-hierarchical taxonomies.
+  468   *                                              Default 'Popular Tags'.
+  469:  *     @type string $all_items                  Default 'All Tags'/'All Categories'.
+  470   *     @type string $parent_item                This label is only used for hierarchical taxonomies. Default
+  471   *                                              'Parent Category'.
+  ...
+  507  		'search_items' => array( __( 'Search Tags' ), __( 'Search Categories' ) ),
+  508  		'popular_items' => array( __( 'Popular Tags' ), null ),
+  509: 		'all_items' => array( __( 'All Tags' ), __( 'All Categories' ) ),
+  510  		'parent_item' => array( null, __( 'Parent Category' ) ),
+  511  		'parent_item_colon' => array( null, __( 'Parent Category:' ) ),
+
+31 matches across 29 files
+
+
+Searching 140 files for "All Categories"
+
+C:\xampp\htdocs\wordpress\wp-content\themes\online-shop\languages\online-shop.pot:
+ 2780  
+ 2781  #: template-parts/product-search.php:13
+ 2782: msgid "All Categories"
+ 2783  msgstr ""
+ 2784  
+
+C:\xampp\htdocs\wordpress\wp-content\themes\online-shop\template-parts\product-search.php:
+   11  			<?php $current = ( isset( $_GET['product_category'] ) ) ? absint( $_GET['product_category'] ) : '' ; ?>
+   12              <select class="select_products" name="product_category">
+   13:                 <option value=""><?php esc_html_e( 'All Categories', 'online-shop' ); ?></option>
+   14  				<?php foreach ( $terms as $cat ) : ?>
+   15                      <option value="<?php echo esc_attr( $cat->term_id ); ?>" <?php selected( $current, $cat->term_id ); ?> ><?php echo esc_attr( $cat->name ); ?></option>
+
+2 matches across 2 files

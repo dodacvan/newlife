@@ -1,0 +1,106 @@
+/*
+Theme Name: i-spirit
+Description: Adds support for languages written in a Right To Left (RTL) direction.
+It's easy, just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+See http://codex.wordpress.org/Right_to_Left_Language_Support
+*/
+
+.owl-carousel {
+	direction: ltr;
+}
+
+.nx-column .widget {
+	direction: ltr;
+}
+
+.site-footer .widget {
+	direction: rtl;
+	text-align: right;
+}
+
+ul.products li.product,
+h1, h2, h3, h4, h5, h6, .nx-heading, .nx-service-title {
+	direction: rtl;
+}
+
+.site-footer .widget .ibutton {
+	margin-right: 0px;
+}
+
+button, input, select, textarea {
+	direction: rtl;
+}
+
+input, select, textarea {
+	text-align: right;
+}
+
+.site-header .home-link {
+	padding-right: 0px;
+	padding-left: 20px;
+	float: right;
+}
+
+.navbar {
+	float: left;
+	direction: rtl;
+}
+
+menu, ol, ul {
+	padding-right: 40px;
+	padding-left: 0px;
+}
+
+.header-inwrap .woocart .cartdrop a.wc-forward.checkout {
+	margin-left: 16px;
+	margin-right: 16px;
+}
+
+.navbar .header-icons {
+	display: block;
+	float: left;
+}
+
+.navbar .main-navigation {
+	display: block;
+	float: right;
+}
+
+.single-product .product {
+	direction: ltr;
+}
+
+.single-product .product .entry-summary,
+.single-product .product .woocommerce-tabs.wc-tabs-wrapper {
+	direction: rtl;
+}
+
+.headerwrap .navbar,
+.iheader .nx-breadcrumb {
+	float: left;
+}
+
+.iheader h1 {
+	float: right;
+}
+
+.nxowoo-box {
+	text-align: right;
+}
+
+.tx-cta a.cta-button, 
+.tx-cta a.cta-button:visited {
+	float: left;
+}
+
+.tx-prod-carousel .woocommerce ul.products li.product, 
+.tx-prod-carousel .woocommerce-page {
+	text-align: right;
+}
+
+.nx-slider-container {
+	direction: rtl;
+	text-align: right;
+}

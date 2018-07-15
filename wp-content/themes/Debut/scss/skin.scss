@@ -1,0 +1,2062 @@
+@import "_bootstrap";
+
+/* @import "_skin"; */
+
+// Colors
+$default-bg: #fff;
+$alternate-bg: #f9f9f9;
+$footer-bg:#34363e;
+$btm-footer-bg:#272930;
+$text-default-color: #777777;
+$text-white-color: #fff;
+$text-heading-default-color: #333333;
+$gray-light: #ddd;
+// Border
+$btn-default-border-radius: 0px !default;
+$btn-rounded-border-radius: 50% !default;
+$btn-default-border-color: $gray-light;
+$link-color:$text-default-color;
+
+/******************* CYAN THEME *******************/
+
+body.cyan {
+    $cyan-theme: #1abac8;
+    $link-hover-color: $cyan-theme;
+    span {
+        color: $cyan-theme;
+    }
+    //button
+    $btn-default-color:$text-white-color;
+    $btn-default-bg: $cyan-theme;
+    $btn-default-border-color:$cyan-theme;
+    //button
+    $btn-primary-color:$cyan-theme;
+    $btn-primary-bg: $default-bg;
+    $btn-primary-border-color:$cyan-theme;
+    .btn-primary {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border-color);
+        background: none;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-default-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-default-color;
+        }
+    }
+    .fillbtn:hover,
+    .fillbtn:focus {
+        box-shadow: inset 0 0 0 2em $cyan-theme;
+    }
+    .slide:hover,
+    .slide:focus {
+        box-shadow: inset 15.5em 0 0 0 $cyan-theme;
+    }
+    .btn-primary:focus,
+    .btn-primary.focus {
+        color: $text-white-color;
+        background-color: $cyan-theme;
+        border-color: $cyan-theme;
+    }
+    #top-header {
+        ul.contact_links a:hover {
+            color: $cyan-theme;
+        }
+        ul.social_links {
+            i:hover {
+                color: $cyan-theme;
+            }
+        }
+    }
+    .navbar-brand {
+        h1 {
+            color: $cyan-theme!important;
+        }
+        span {
+            color: $text-heading-default-color!important;
+        }
+    }
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: $default-bg;
+    }
+    .navbar-inverse .navbar-toggle {
+        border-color: $btn-primary-border-color
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: $cyan-theme;
+    }
+    i {
+        color: $cyan-theme;
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-default-color;
+            background-color: $cyan-theme;
+            text-decoration: none;
+        }
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            background-color: $cyan-theme;
+            border-color: $cyan-theme;
+            text-decoration: none;
+        }
+    }
+    .section-heading {
+        span {
+            color: $cyan-theme;
+        }
+    }
+    .navbar-inverse .navbar-nav>li>a:hover,
+    .navbar-inverse .navbar-nav>li>a:focus {
+        color: $cyan-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $cyan-theme;
+    }
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:hover,
+    .navbar-inverse .navbar-nav>.active>a:focus {
+        color: $cyan-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $cyan-theme;
+    }
+    #myCarousel {
+        .carousel-indicators .active {
+            background-color: $cyan-theme;
+            border-color: $cyan-theme;
+        }
+    }
+    #features {
+        a.readmore {
+            color: $cyan-theme;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    #process {
+        .process-block:hover {
+            .process-icon {
+                background-color: $cyan-theme;
+            }
+            .process-icon-holder {
+                border-color: $cyan-theme;
+            }
+            .process-border {
+                border: 20px solid rgba(26, 186, 200, 0.2);
+            }
+        }
+    }
+    #testimonial {
+        .user-info {
+            display: inline-block;
+            p {
+                color: $cyan-theme;
+            }
+        }
+    }
+    #footer {
+        a:hover {
+            color: $link-hover-color;
+        }
+        a:hover i {
+            color: $cyan-theme;
+        }
+        .footer-block {
+            hr {
+                background-color: $cyan-theme;
+                width: 50px;
+                height: 3px;
+                border-top: 1px solid #34363e;
+                margin-top: 0px;
+                display: inline-block;
+            }
+        }
+    }
+    #bottom-footer {
+        .copyright {
+            a {
+                color: $cyan-theme;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        a:hover {
+            color: $link-hover-color;
+        }
+    }
+    #panel {
+        .open {
+            background-color: $cyan-theme;
+            display: block;
+            width: 42px;
+            border-radius: 0 3px 3px 0;
+            height: 42px;
+            float: right;
+            font-size: 22px;
+            top: 60px;
+            right: -42px;
+            z-index: 1000;
+            position: absolute;
+        }
+    }
+    //about page scss
+    #skills {
+        .progress.color .progress-bar {
+            border-color: $cyan-theme;
+        }
+        .progress.color .progress-value {
+            color: $text-white-color;
+            background-color: $cyan-theme;
+        }
+        .progress.progress-bar-1 .progress-left .progress-bar {
+            animation: loading-2 1.5s linear forwards 1.8s;
+        }
+        .progress.progress-bar-2 .progress-left .progress-bar {
+            animation: loading-3 1s linear forwards 1.8s;
+        }
+        .progress.progress-bar-3 .progress-left .progress-bar {
+            animation: loading-4 0.4s linear forwards 1.8s;
+        }
+        .progress.progress-bar-4 .progress-left .progress-bar {
+            animation: loading-5 1.2s linear forwards 1.8s;
+        }
+    }
+    #team-member {
+        .qodef-circle-animate {
+            background-color: $cyan-theme;
+        }
+    }
+    //end about page css
+    //portfolio page css
+    #portfolio {
+        .portfolio-hover {
+            background-color: $cyan-theme;
+        }
+    }
+    //end portfolio page css
+    //contact page css
+    #contact-page {
+        .submit-button {
+            background: $cyan-theme;
+        }
+    }
+    //end contact page css
+    //faq page css
+    #faq {
+        .icon-circle {
+            background: $cyan-theme;
+        }
+        .panel-title {
+            a:hover,
+            a:active {
+                color: $cyan-theme;
+            }
+        }
+    }
+    //end faq page css
+    //features page css
+    #features-page {
+        .iconbox-style.icon-color i.boxicon {
+            color: $cyan-theme;
+        }
+        .right-background {
+            background-color: $cyan-theme;
+        }
+        .right-background:before {
+            right: -999em;
+            background: $cyan-theme;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 999em;
+            top: 0;
+            bottom: 0;
+        }
+        .flip .icon-color.card .back {
+            background: $cyan-theme;
+        }
+        .divider5 {
+            border-bottom-color: $cyan-theme;
+        }
+        .feature-section-3-left {
+            color: $cyan-theme;
+            h1 {
+                color: $cyan-theme;
+            }
+        }
+        .feature-section-3-right {
+            background-color: $cyan-theme;
+        }
+        //pricing plan
+        .pricing-plan-2 {
+            //background-color:#1cbac8;
+            background-color: $cyan-theme;
+        }
+        hr {
+            background-color: $cyan-theme;
+        }
+        .right-section {
+            background-color: $cyan-theme;
+        }
+    }
+    //end feature page
+    //login
+    #login-reg {
+        .form-box {
+            .btn {
+                background-color: $cyan-theme;
+            }
+        }
+    }
+    //end login
+} //body
+
+/******************* BLUE THEME *******************/
+
+body.blue {
+    $blue-theme: #159eee;
+    $link-hover-color: $blue-theme;
+    span {
+        color: $blue-theme;
+    }
+    //button
+    $btn-default-color:$text-white-color;
+    $btn-default-bg: $blue-theme;
+    $btn-default-border-color:$blue-theme;
+    //button
+    $btn-primary-color:$blue-theme;
+    $btn-primary-bg: $default-bg;
+    $btn-primary-border-color:$blue-theme;
+    .btn-primary {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border-color);
+        background: none;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-default-color;
+        }
+    }
+    .slide:hover,
+    .slide:focus {
+        box-shadow: inset 15.5em 0 0 0 $blue-theme;
+    }
+    .btn-primary:focus,
+    .btn-primary.focus,
+    .btn-primary:visited,
+    .btn-primary.visited {
+        color: $text-white-color;
+        background-color: $blue-theme;
+        border-color: $blue-theme;
+    }
+    #top-header {
+        ul.contact_links a:hover {
+            color: $blue-theme;
+        }
+        ul.social_links {
+            i:hover {
+                color: $blue-theme;
+            }
+        }
+    }
+    .navbar-brand {
+        h1 {
+            color: $blue-theme!important;
+        }
+        span {
+            color: $text-heading-default-color!important;
+        }
+    }
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: $default-bg;
+    }
+    .navbar-inverse .navbar-toggle {
+        border-color: $btn-primary-border-color
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: $blue-theme;
+    }
+    i {
+        color: $blue-theme;
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-default-color;
+            background-color: $blue-theme;
+            text-decoration: none;
+        }
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            background-color: $blue-theme;
+            border-color: $blue-theme;
+            text-decoration: none;
+        }
+    }
+    .section-heading {
+        span {
+            color: $blue-theme;
+        }
+    }
+    .navbar-inverse .navbar-nav>li>a:hover,
+    .navbar-inverse .navbar-nav>li>a:focus {
+        color: $blue-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $blue-theme;
+    }
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:hover,
+    .navbar-inverse .navbar-nav>.active>a:focus {
+        color: $blue-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $blue-theme;
+    }
+    #myCarousel {
+        .carousel-indicators .active {
+            background-color: $blue-theme;
+            border-color: $blue-theme;
+        }
+    }
+    #features {
+        a.readmore {
+            color: $blue-theme;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    #process {
+        .process-block:hover {
+            .process-icon {
+                background-color: $blue-theme;
+            }
+            .process-icon-holder {
+                border-color: $blue-theme;
+            }
+            .process-border {
+                border: 20px solid rgba(21, 158, 238, 0.2);
+            }
+        }
+    }
+    #testimonial {
+        .user-info {
+            display: inline-block;
+            margin-top: 10px;
+            p {
+                color: $blue-theme;
+            }
+        }
+    }
+    #footer {
+        a:hover {
+            color: $link-hover-color;
+        }
+        a:hover i {
+            color: $blue-theme;
+        }
+        .footer-block {
+            hr {
+                background-color: $blue-theme;
+                width: 50px;
+                height: 3px;
+                border-top: 1px solid #34363e;
+                margin-top: 0px;
+                display: inline-block;
+            }
+        }
+    }
+    #bottom-footer {
+        .copyright {
+            a {
+                color: $blue-theme;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        a:hover {
+            color: $link-hover-color;
+        }
+    }
+    #panel {
+        .open {
+            background-color: $blue-theme;
+            display: block;
+            width: 42px;
+            border-radius: 0 3px 3px 0;
+            height: 42px;
+            float: right;
+            font-size: 22px;
+            top: 60px;
+            right: -42px;
+            z-index: 1000;
+            position: absolute;
+        }
+    }
+    //about page scss
+    #skills {
+        .progress.color .progress-bar {
+            border-color: $blue-theme;
+        }
+        .progress.color .progress-value {
+            color: $text-white-color;
+            background-color: $blue-theme;
+        }
+        .progress.progress-bar-1 .progress-left .progress-bar {
+            animation: loading-2 1.5s linear forwards 1.8s;
+        }
+        .progress.progress-bar-2 .progress-left .progress-bar {
+            animation: loading-3 1s linear forwards 1.8s;
+        }
+        .progress.progress-bar-3 .progress-left .progress-bar {
+            animation: loading-4 0.4s linear forwards 1.8s;
+        }
+        .progress.progress-bar-4 .progress-left .progress-bar {
+            animation: loading-5 1.2s linear forwards 1.8s;
+        }
+    }
+    #team-member {
+        .qodef-circle-animate {
+            background-color: $blue-theme;
+        }
+    }
+    //end about page css
+    //portfolio page css
+    #portfolio {
+        .portfolio-hover {
+            background-color: $blue-theme;
+        }
+    }
+    //end portfolio page css
+    //contact page css
+    #contact-page {
+        .submit-button {
+            background: $blue-theme;
+        }
+    }
+    //end contact page css
+    //faq page css
+    #faq {
+        .icon-circle {
+            background: $blue-theme;
+        }
+        .panel-title {
+            a:hover,
+            a:active {
+                color: $blue-theme;
+            }
+        }
+    }
+    //end faq page css
+    //features page css
+    #features-page {
+        .right-background {
+            background-color: $blue-theme;
+        }
+        .right-background:before {
+            right: -999em;
+            background: $blue-theme;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 999em;
+            top: 0;
+            bottom: 0;
+        }
+        .iconbox-style.icon-color i.boxicon {
+            color: $blue-theme !important;
+        }
+        .flip .icon-color.card .back {
+            background: $blue-theme;
+        }
+        .divider5 {
+            border-bottom-color: $blue-theme;
+        }
+        .feature-section-3-left {
+            color: $blue-theme;
+            h1 {
+                color: $blue-theme;
+            }
+        }
+        .feature-section-3-right {
+            background-color: $blue-theme;
+        }
+        //pricing plan
+        .pricing-plan-2 {
+            //background-color:#1cbac8;
+            background-color: $blue-theme;
+        }
+        hr {
+            background-color: $blue-theme;
+        }
+        .right-section {
+            background-color: $blue-theme;
+        }
+    }
+    //end feature page
+    //login
+    #login-reg {
+        .form-box {
+            .btn {
+                background-color: $blue-theme;
+            }
+        }
+    }
+    //end login
+} //body
+
+/******************* ORANGE THEME *******************/
+
+body.orange {
+    $orange-theme: #ff8a00;
+    $link-hover-color: $orange-theme;
+    span {
+        color: $orange-theme;
+    }
+    //button
+    $btn-default-color:$text-white-color;
+    $btn-default-bg: $orange-theme;
+    $btn-default-border-color:$orange-theme;
+    //button
+    $btn-primary-color:$orange-theme;
+    $btn-primary-bg: $default-bg;
+    $btn-primary-border-color:$orange-theme;
+    .slide:hover,
+    .slide:focus {
+        box-shadow: inset 15.5em 0 0 0 $orange-theme;
+    }
+    .btn-primary:focus,
+    .btn-primary.focus {
+        color: $text-white-color;
+        background-color: $orange-theme;
+        border-color: $orange-theme;
+    }
+    .btn-primary {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border-color);
+        background: none;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-default-color;
+        }
+    }
+    #top-header {
+        ul.contact_links a:hover {
+            color: $orange-theme;
+        }
+        ul.social_links {
+            i:hover {
+                color: $orange-theme;
+            }
+        }
+    }
+    .navbar-brand {
+        h1 {
+            color: $orange-theme!important;
+        }
+        span {
+            color: $text-heading-default-color!important;
+        }
+    }
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: $default-bg;
+    }
+    .navbar-inverse .navbar-toggle {
+        border-color: $btn-primary-border-color
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: $orange-theme;
+    }
+    i {
+        color: $orange-theme;
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-default-color;
+            background-color: $orange-theme;
+            text-decoration: none;
+        }
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            background-color: $orange-theme;
+            border-color: $orange-theme;
+            text-decoration: none;
+        }
+    }
+    .section-heading {
+        span {
+            color: $orange-theme;
+        }
+    }
+    .navbar-inverse .navbar-nav>li>a:hover,
+    .navbar-inverse .navbar-nav>li>a:focus {
+        color: $orange-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $orange-theme;
+    }
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:hover,
+    .navbar-inverse .navbar-nav>.active>a:focus {
+        color: $orange-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $orange-theme;
+    }
+    #myCarousel {
+        .carousel-indicators .active {
+            background-color: $orange-theme;
+            border-color: $orange-theme;
+        }
+    }
+    #features {
+        a.readmore {
+            color: $orange-theme;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    #process {
+        .process-block:hover {
+            .process-icon {
+                background-color: $orange-theme;
+            }
+            .process-icon-holder {
+                border-color: $orange-theme;
+            }
+            .process-border {
+                border: 20px solid rgba(255, 138, 0, 0.2);
+            }
+        }
+    }
+    #testimonial {
+        .user-info {
+            display: inline-block;
+            p {
+                color: $orange-theme;
+            }
+        }
+    }
+    #footer {
+        a:hover {
+            color: $link-hover-color;
+        }
+        a:hover i {
+            color: $orange-theme;
+        }
+        .footer-block {
+            hr {
+                background-color: $orange-theme;
+                width: 50px;
+                height: 3px;
+                border-top: 1px solid #34363e;
+                margin-top: 0px;
+                display: inline-block;
+            }
+        }
+    }
+    #bottom-footer {
+        .copyright {
+            a {
+                color: $orange-theme;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        a:hover {
+            color: $link-hover-color;
+        }
+    }
+    #panel {
+        .open {
+            background-color: $orange-theme;
+            display: block;
+            width: 42px;
+            border-radius: 0 3px 3px 0;
+            height: 42px;
+            float: right;
+            font-size: 22px;
+            top: 60px;
+            right: -42px;
+            z-index: 1000;
+            position: absolute;
+        }
+    }
+    //about page scss
+    #skills {
+        .progress.color .progress-bar {
+            border-color: $orange-theme;
+        }
+        .progress.color .progress-value {
+            color: $text-white-color;
+            background-color: $orange-theme;
+        }
+        .progress.progress-bar-1 .progress-left .progress-bar {
+            animation: loading-2 1.5s linear forwards 1.8s;
+        }
+        .progress.progress-bar-2 .progress-left .progress-bar {
+            animation: loading-3 1s linear forwards 1.8s;
+        }
+        .progress.progress-bar-3 .progress-left .progress-bar {
+            animation: loading-4 0.4s linear forwards 1.8s;
+        }
+        .progress.progress-bar-4 .progress-left .progress-bar {
+            animation: loading-5 1.2s linear forwards 1.8s;
+        }
+    }
+    #team-member {
+        .qodef-circle-animate {
+            background-color: $orange-theme;
+        }
+    } //team member
+    //end about page css
+    //portfolio page css
+    #portfolio {
+        .portfolio-hover {
+            background-color: $orange-theme;
+        }
+    }
+    //end portfolio page css
+    //contact page css
+    #contact-page {
+        .submit-button {
+            background: $orange-theme;
+        }
+    }
+    //end contact page css
+    //faq page css
+    #faq {
+        .icon-circle {
+            background: $orange-theme;
+        }
+        .panel-title {
+            a:hover,
+            a:active {
+                color: $orange-theme;
+            }
+        }
+    }
+    //end faq page css
+    //features page css
+    #features-page {
+        .right-background {
+            background-color: $orange-theme;
+        }
+        .right-background:before {
+            right: -999em;
+            background: $orange-theme;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 999em;
+            top: 0;
+            bottom: 0;
+        }
+        .iconbox-style.icon-color i.boxicon {
+            color: $orange-theme !important;
+        }
+        .flip .icon-color.card .back {
+            background: $orange-theme;
+        }
+        .divider5 {
+            border-bottom-color: $orange-theme;
+        }
+        .feature-section-3-left {
+            color: $orange-theme;
+            h1 {
+                color: $orange-theme;
+            }
+        }
+        .feature-section-3-right {
+            background-color: $orange-theme;
+        }
+        //pricing plan
+        .pricing-plan-2 {
+            //background-color:#1cbac8;
+            background-color: $orange-theme;
+        }
+        hr {
+            background-color: $orange-theme;
+        }
+        .right-section {
+            background-color: $orange-theme;
+        }
+    }
+    //end feature page
+    //login
+    #login-reg {
+        .form-box {
+            .btn {
+                background-color: $orange-theme;
+            }
+        }
+    }
+    //end login
+} //body
+
+/******************* RED THEME *******************/
+
+body.red {
+    $red-theme: #e54e53;
+    $link-hover-color: $red-theme;
+    span {
+        color: $red-theme;
+    }
+    //button
+    $btn-default-color:$text-white-color;
+    $btn-default-bg: $red-theme;
+    $btn-default-border-color:$red-theme;
+    //button
+    $btn-primary-color:$red-theme;
+    $btn-primary-bg: $default-bg;
+    $btn-primary-border-color:$red-theme;
+    .slide:hover,
+    .slide:focus {
+        box-shadow: inset 15.5em 0 0 0 $red-theme;
+    }
+    .btn-primary:focus,
+    .btn-primary.focus {
+        color: $text-white-color;
+        background-color: $red-theme;
+        border-color: $red-theme;
+    }
+    .btn-primary {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border-color);
+        background: none;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-default-color;
+        }
+    }
+    #top-header {
+        ul.contact_links a:hover {
+            color: $red-theme;
+        }
+        ul.social_links {
+            i:hover {
+                color: $red-theme;
+            }
+        }
+    }
+    .navbar-brand {
+        h1 {
+            color: $red-theme!important;
+        }
+        span {
+            color: $text-heading-default-color!important;
+        }
+    }
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: $default-bg;
+    }
+    .navbar-inverse .navbar-toggle {
+        border-color: $btn-primary-border-color
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: $red-theme;
+    }
+    i {
+        color: $red-theme;
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-default-color;
+            background-color: $red-theme;
+            text-decoration: none;
+        }
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            background-color: $red-theme;
+            border-color: $red-theme;
+            text-decoration: none;
+        }
+    }
+    .section-heading {
+        span {
+            color: $red-theme;
+        }
+    }
+    .navbar-inverse .navbar-nav>li>a:hover,
+    .navbar-inverse .navbar-nav>li>a:focus {
+        color: $red-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $red-theme;
+    }
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:hover,
+    .navbar-inverse .navbar-nav>.active>a:focus {
+        color: $red-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $red-theme;
+    }
+    #myCarousel {
+        .carousel-indicators .active {
+            background-color: $red-theme;
+            border-color: $red-theme;
+        }
+    }
+    #features {
+        a.readmore {
+            color: $red-theme;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    #process {
+        .process-block:hover {
+            .process-icon {
+                background-color: $red-theme;
+            }
+            .process-icon-holder {
+                border-color: $red-theme;
+            }
+            .process-border {
+                border: 20px solid rgba(229, 78, 83, 0.2);
+            }
+        }
+    }
+    #testimonial {
+        .user-info {
+            display: inline-block;
+            p {
+                color: $red-theme;
+            }
+        }
+    }
+    #footer {
+        a:hover {
+            color: $link-hover-color;
+        }
+        a:hover i {
+            color: $red-theme;
+        }
+        .footer-block {
+            hr {
+                background-color: $red-theme;
+                width: 50px;
+                height: 3px;
+                border-top: 1px solid #34363e;
+                margin-top: 0px;
+                display: inline-block;
+            }
+        }
+    }
+    #bottom-footer {
+        .copyright {
+            a {
+                color: $red-theme;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        a:hover {
+            color: $link-hover-color;
+        }
+    }
+    #panel {
+        .open {
+            background-color: $red-theme;
+            display: block;
+            width: 42px;
+            border-radius: 0 3px 3px 0;
+            height: 42px;
+            float: right;
+            font-size: 22px;
+            top: 60px;
+            right: -42px;
+            z-index: 1000;
+            position: absolute;
+        }
+    }
+    //about page scss
+    #skills {
+        .progress.color .progress-bar {
+            border-color: $red-theme;
+        }
+        .progress.color .progress-value {
+            color: $text-white-color;
+            background-color: $red-theme;
+        }
+        .progress.progress-bar-1 .progress-left .progress-bar {
+            animation: loading-2 1.5s linear forwards 1.8s;
+        }
+        .progress.progress-bar-2 .progress-left .progress-bar {
+            animation: loading-3 1s linear forwards 1.8s;
+        }
+        .progress.progress-bar-3 .progress-left .progress-bar {
+            animation: loading-4 0.4s linear forwards 1.8s;
+        }
+        .progress.progress-bar-4 .progress-left .progress-bar {
+            animation: loading-5 1.2s linear forwards 1.8s;
+        }
+    }
+    #team-member {
+        .qodef-circle-animate {
+            background-color: $red-theme;
+        }
+    } //team member
+    //end about page css
+    //portfolio page css
+    #portfolio {
+        .portfolio-hover {
+            background-color: $red-theme;
+        }
+    }
+    //end portfolio page css
+    //contact page css
+    #contact-page {
+        .submit-button {
+            background: $red-theme;
+        }
+    }
+    //end contact page css
+    //faq page css
+    #faq {
+        .icon-circle {
+            background: $red-theme;
+        }
+        .panel-title {
+            a:hover,
+            a:active {
+                color: $red-theme;
+            }
+        }
+    }
+    //end faq page css
+    //features page css
+    #features-page {
+        .right-background {
+            background-color: $red-theme;
+        }
+        .right-background:before {
+            right: -999em;
+            background: $red-theme;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 999em;
+            top: 0;
+            bottom: 0;
+        }
+        .iconbox-style.icon-color i.boxicon {
+            color: $red-theme !important;
+        }
+        .flip .icon-color.card .back {
+            background: $red-theme;
+        }
+        .divider5 {
+            border-bottom-color: $red-theme;
+        }
+        .feature-section-3-left {
+            color: $red-theme;
+            h1 {
+                color: $red-theme;
+            }
+        }
+        .feature-section-3-right {
+            background-color: $red-theme;
+        }
+        //pricing plan
+        .pricing-plan-2 {
+            //background-color:#1cbac8;
+            background-color: $red-theme;
+        }
+        hr {
+            background-color: $red-theme;
+        }
+        .right-section {
+            background-color: $red-theme;
+        }
+    }
+    //end feature page
+    //login
+    #login-reg {
+        .form-box {
+            .btn {
+                background-color: $red-theme;
+            }
+        }
+    }
+    //end login
+} //body
+
+/******************* GREEN THEME *******************/
+
+body.green {
+    $green-theme: #1abc9c;
+    $link-hover-color: $green-theme;
+    span {
+        color: $green-theme;
+    }
+    //button
+    $btn-default-color:$text-white-color;
+    $btn-default-bg: $green-theme;
+    $btn-default-border-color:$green-theme;
+    //button
+    $btn-primary-color:$green-theme;
+    $btn-primary-bg: $default-bg;
+    $btn-primary-border-color:$green-theme;
+    .slide:hover,
+    .slide:focus {
+        box-shadow: inset 15.5em 0 0 0 $green-theme;
+    }
+    .btn-primary:focus,
+    .btn-primary.focus {
+        color: $text-white-color;
+        background-color: $green-theme;
+        border-color: $green-theme;
+    }
+    .btn-primary {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border-color);
+        background: none;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-default-color;
+        }
+    }
+    #top-header {
+        ul.contact_links a:hover {
+            color: $green-theme;
+        }
+        ul.social_links {
+            i:hover {
+                color: $green-theme;
+            }
+        }
+    }
+    .navbar-brand {
+        h1 {
+            color: $green-theme!important;
+        }
+        span {
+            color: $text-heading-default-color!important;
+        }
+    }
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: $default-bg;
+    }
+    .navbar-inverse .navbar-toggle {
+        border-color: $btn-primary-border-color
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: $green-theme;
+    }
+    i {
+        color: $green-theme;
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-default-color;
+            background-color: $green-theme;
+            text-decoration: none;
+        }
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            background-color: $green-theme;
+            border-color: $green-theme;
+            text-decoration: none;
+        }
+    }
+    .section-heading {
+        span {
+            color: $green-theme;
+        }
+    }
+    .navbar-inverse .navbar-nav>li>a:hover,
+    .navbar-inverse .navbar-nav>li>a:focus {
+        color: $green-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $green-theme;
+    }
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:hover,
+    .navbar-inverse .navbar-nav>.active>a:focus {
+        color: $green-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $green-theme;
+    }
+    #myCarousel {
+        .carousel-indicators .active {
+            background-color: $green-theme;
+            border-color: $green-theme;
+        }
+    }
+    #features {
+        a.readmore {
+            color: $green-theme;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    #process {
+        .process-block:hover {
+            .process-icon {
+                background-color: $green-theme;
+            }
+            .process-icon-holder {
+                border-color: $green-theme;
+            }
+            .process-border {
+                border: 20px solid rgba(26, 188, 156, 0.2);
+            }
+        }
+    }
+    #testimonial {
+        .user-info {
+            display: inline-block;
+            p {
+                color: $green-theme;
+            }
+        }
+    }
+    #footer {
+        a:hover {
+            color: $link-hover-color;
+        }
+        a:hover i {
+            color: $green-theme;
+        }
+        .footer-block {
+            hr {
+                background-color: $green-theme;
+                width: 50px;
+                height: 3px;
+                border-top: 1px solid #34363e;
+                margin-top: 0px;
+                display: inline-block;
+            }
+        }
+    }
+    #bottom-footer {
+        .copyright {
+            a {
+                color: $green-theme;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        a:hover {
+            color: $link-hover-color;
+        }
+    }
+    #panel {
+        .open {
+            background-color: $green-theme;
+            display: block;
+            width: 42px;
+            border-radius: 0 3px 3px 0;
+            height: 42px;
+            float: right;
+            font-size: 22px;
+            top: 60px;
+            right: -42px;
+            z-index: 1000;
+            position: absolute;
+        }
+    }
+    //about page scss
+    #skills {
+        .progress.color .progress-bar {
+            border-color: $green-theme;
+        }
+        .progress.color .progress-value {
+            color: $text-white-color;
+            background-color: $green-theme;
+        }
+        .progress.progress-bar-1 .progress-left .progress-bar {
+            animation: loading-2 1.5s linear forwards 1.8s;
+        }
+        .progress.progress-bar-2 .progress-left .progress-bar {
+            animation: loading-3 1s linear forwards 1.8s;
+        }
+        .progress.progress-bar-3 .progress-left .progress-bar {
+            animation: loading-4 0.4s linear forwards 1.8s;
+        }
+        .progress.progress-bar-4 .progress-left .progress-bar {
+            animation: loading-5 1.2s linear forwards 1.8s;
+        }
+    }
+    #team-member {
+        .qodef-circle-animate {
+            background-color: $green-theme;
+        } //team member
+    }
+    //end about page css
+    //portfolio page css
+    #portfolio {
+        .portfolio-hover {
+            background-color: $green-theme;
+        }
+    }
+    //end portfolio page css
+    //contact page css
+    #contact-page {
+        .submit-button {
+            background: $green-theme;
+        }
+    }
+    //end contact page css
+    //faq page css
+    #faq {
+        .icon-circle {
+            background: $green-theme;
+        }
+        .panel-title {
+            a:hover,
+            a:active {
+                color: $green-theme;
+            }
+        }
+    }
+    //end faq page css
+    //features page css
+    #features-page {
+        .right-background {
+            background-color: $green-theme;
+        }
+        .right-background:before {
+            right: -999em;
+            background: $green-theme;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 999em;
+            top: 0;
+            bottom: 0;
+        }
+        .iconbox-style.icon-color i.boxicon {
+            color: $green-theme !important;
+        }
+        .flip .icon-color.card .back {
+            background: $green-theme;
+        }
+        .divider5 {
+            border-bottom-color: $green-theme;
+        }
+        .feature-section-3-left {
+            color: $green-theme;
+            h1 {
+                color: $green-theme;
+            }
+        }
+        .feature-section-3-right {
+            background-color: $green-theme;
+        }
+        //pricing plan
+        .pricing-plan-2 {
+            //background-color:#1cbac8;
+            background-color: $green-theme;
+        }
+        hr {
+            background-color: $green-theme;
+        }
+        .right-section {
+            background-color: $green-theme;
+        }
+    }
+    //end feature page
+    //login
+    #login-reg {
+        .form-box {
+            .btn {
+                background-color: $green-theme;
+            }
+        }
+    }
+    //end login
+} //body
+
+/******************* LIGHT GREEN THEME *******************/
+
+body.lightgreen {
+    $lgreen-theme: #b4de50;
+    $link-hover-color: $lgreen-theme;
+    span {
+        color: $lgreen-theme;
+    }
+    //button
+    $btn-default-color:$text-white-color;
+    $btn-default-bg: $lgreen-theme;
+    $btn-default-border-color:$lgreen-theme;
+    //button
+    $btn-primary-color:$lgreen-theme;
+    $btn-primary-bg: $default-bg;
+    $btn-primary-border-color:$lgreen-theme;
+    .slide:hover,
+    .slide:focus {
+        box-shadow: inset 12.5em 0 0 0 $lgreen-theme;
+    }
+    .btn-primary {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border-color);
+        background: none;
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default {
+        padding: 15px 50px;
+        border-radius: $btn-default-border-radius;
+        font-weight: bold;
+        text-transform: uppercase;
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        i {
+            color: $text-white-color;
+        }
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        transition: 0.25s;
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            text-decoration: none;
+        }
+        i {
+            color: $text-default-color;
+        }
+    }
+    #top-header {
+        ul.contact_links a:hover {
+            color: $lgreen-theme;
+        }
+        ul.social_links {
+            i:hover {
+                color: $lgreen-theme;
+            }
+        }
+    }
+    .navbar-brand {
+        h1 {
+            color: $lgreen-theme!important;
+        }
+        span {
+            color: $text-heading-default-color!important;
+        }
+    }
+    .navbar-inverse .navbar-toggle:hover,
+    .navbar-inverse .navbar-toggle:focus {
+        background-color: $default-bg;
+    }
+    .navbar-inverse .navbar-toggle {
+        border-color: $btn-primary-border-color
+    }
+    .navbar-inverse .navbar-toggle .icon-bar {
+        background-color: $lgreen-theme;
+    }
+    i {
+        color: $lgreen-theme;
+    }
+    .btn-default:hover {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-default-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-default-color;
+            background-color: $lgreen-theme;
+            text-decoration: none;
+        }
+    }
+    .btn-primary:hover,
+    .btn-primary:focus,
+    .btn-primary:active {
+        @include button-variant($btn-default-color, $btn-default-bg, $btn-primary-border-color);
+        &:hover,
+        &:focus,
+        &.focus {
+            color: $text-white-color;
+            background-color: $lgreen-theme;
+            border-color: $lgreen-theme;
+            text-decoration: none;
+        }
+    }
+    .section-heading {
+        span {
+            color: $lgreen-theme;
+        }
+    }
+    .navbar-inverse .navbar-nav>li>a:hover,
+    .navbar-inverse .navbar-nav>li>a:focus {
+        color: $lgreen-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $lgreen-theme;
+    }
+    .navbar-inverse .navbar-nav>.active>a,
+    .navbar-inverse .navbar-nav>.active>a:hover,
+    .navbar-inverse .navbar-nav>.active>a:focus {
+        color: $lgreen-theme;
+        background-color: transparent;
+        border-bottom-width: 5px;
+        border-bottom-style: solid;
+        border-bottom-color: $lgreen-theme;
+    }
+    #myCarousel {
+        .carousel-indicators .active {
+            background-color: $lgreen-theme;
+            border-color: $lgreen-theme;
+        }
+    }
+    #features {
+        a.readmore {
+            color: $lgreen-theme;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+    }
+    #process {
+        .process-block:hover {
+            .process-icon {
+                background-color: $lgreen-theme;
+            }
+            .process-icon-holder {
+                border-color: $lgreen-theme;
+            }
+            .process-border {
+                border: 20px solid rgba(180, 222, 80, 0.2);
+            }
+        }
+    }
+    #testimonial {
+        .user-info {
+            display: inline-block;
+            p {
+                color: $lgreen-theme;
+            }
+        }
+    }
+    #footer {
+        a:hover {
+            color: $link-hover-color;
+        }
+        a:hover i {
+            color: $lgreen-theme;
+        }
+        .footer-block {
+            hr {
+                background-color: $lgreen-theme;
+                width: 50px;
+                height: 3px;
+                border-top: 1px solid #34363e;
+                margin-top: 0px;
+                display: inline-block;
+            }
+        }
+    }
+    #bottom-footer {
+        .copyright {
+            a {
+                color: $lgreen-theme;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+        a:hover {
+            color: $link-hover-color;
+        }
+    }
+    #panel {
+        .open {
+            background-color: $lgreen-theme;
+            display: block;
+            width: 42px;
+            border-radius: 0 3px 3px 0;
+            height: 42px;
+            float: right;
+            font-size: 22px;
+            top: 60px;
+            right: -42px;
+            z-index: 1000;
+            position: absolute;
+        }
+    }
+    //about page scss
+    #skills {
+        .progress.color .progress-bar {
+            border-color: $lgreen-theme;
+        }
+        .progress.color .progress-value {
+            color: $text-white-color;
+            background-color: $lgreen-theme;
+        }
+        .progress.progress-bar-1 .progress-left .progress-bar {
+            animation: loading-2 1.5s linear forwards 1.8s;
+        }
+        .progress.progress-bar-2 .progress-left .progress-bar {
+            animation: loading-3 1s linear forwards 1.8s;
+        }
+        .progress.progress-bar-3 .progress-left .progress-bar {
+            animation: loading-4 0.4s linear forwards 1.8s;
+        }
+        .progress.progress-bar-4 .progress-left .progress-bar {
+            animation: loading-5 1.2s linear forwards 1.8s;
+        }
+    }
+    #team-member {
+        .qodef-circle-animate {
+            background-color: $lgreen-theme;
+        }
+    } //team member
+    //end about page css
+    //portfolio page css
+    #portfolio {
+        .portfolio-hover {
+            background-color: $lgreen-theme;
+        }
+        .submit-button {
+            background: $lgreen-theme;
+        }
+    }
+    //end portfolio page css
+    //contact page css
+    #contact-page {
+        .submit-button {
+            background: $lgreen-theme;
+        }
+    }
+    //end contact page css
+    //faq page css
+    #faq {
+        .icon-circle {
+            background: $lgreen-theme;
+        }
+        .panel-title {
+            a:hover,
+            a:active {
+                color: $lgreen-theme;
+            }
+        }
+    }
+    //end faq page css
+    //features page css
+    #features-page {
+        .right-background {
+            background-color: $lgreen-theme;
+        }
+        .right-background:before {
+            right: -999em;
+            background: $lgreen-theme;
+            content: '';
+            display: block;
+            position: absolute;
+            width: 999em;
+            top: 0;
+            bottom: 0;
+        }
+        .iconbox-style.icon-color i.boxicon {
+            color: $lgreen-theme !important;
+        }
+        .flip .icon-color.card .back {
+            background: $lgreen-theme;
+        }
+        .divider5 {
+            border-bottom-color: $lgreen-theme;
+        }
+        .feature-section-3-left {
+            color: $lgreen-theme;
+            h1 {
+                color: $lgreen-theme;
+            }
+        }
+        .feature-section-3-right {
+            background-color: $lgreen-theme;
+        }
+        //pricing plan
+        .pricing-plan-2 {
+            //background-color:#1cbac8;
+            background-color: $lgreen-theme;
+        }
+        hr {
+            background-color: $lgreen-theme;
+        }
+        .right-section {
+            background-color: $lgreen-theme;
+        }
+    }
+    //end feature page
+    //login
+    #login-reg {
+        .form-box {
+            .btn {
+                background-color: $lgreen-theme;
+            }
+        }
+    }
+    //end login
+} //body
